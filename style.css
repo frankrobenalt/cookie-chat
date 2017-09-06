@@ -6,28 +6,79 @@ html {
 body {
   height: 95%;
   width: 100%;
-  font-family: sans-serif;
+
+  background-color: #747272;
+ 
+}
+
+.head {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 250px;
+  background-color: #00C7FF;
 }
 
 .main-container {
   width: 75%;
   margin: 10px auto;
-  background: rgba(255, 255, 255, 0.86);
+  background: rgba(255, 255, 255, 0.51);
   padding: 5px;
-  border-radius: 10px;
+  overflow-wrap: break-word;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+}
+
+input[type=text] {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #060505;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: #3CBC8D;
+  color: white;
+  transition: width 0.4s ease-in-out;
+}
+input[type=text]:focus {
+  width: 100%;
 }
 
 .main-container h1 {
   text-align: center;
+  font-family: 'Bowlby One SC', cursive;
+  text-shadow: 3px 2px red;
+}
+.messages-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+  font-size: 25px;
+  font-family: 'Bowlby One SC', cursive;
+  border: 1px solid black;
+  
+}
+span {
+  font-size: 14px;
 }
 
 .text-box {
   margin: 0px auto;
   width: 40%;
+  
 }
 
 p{
   text-align: center;
   margin: 3px 0;
   font-size: 17px;
+  
 }
